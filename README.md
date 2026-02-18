@@ -33,38 +33,48 @@ Before running this project, ensure:
 - Python is installed
 - Google Chrome is installed
 - ChromeDriver matches Chrome version
-- Virtual environment is created
+- Virtual environment is created 
 
 ## Setup Steps
 
 1. Clone the repository or download project.
-2. Navigate to project folder:
+2. Create project folders:
 
-   cd PYTEST
+   Create a folder "PYTEST" and place all the files inside "PYTEST" (file names: __init__.py, conftest.py and test_orangehrm_flow.py)
 
-3. Create virtual environment:
+   Create a folder "PageObjectModel" and place all the files inside "PageObjectModel" (file names: login_page.py, base_page.py, leave_page.py and recruitment_page.py)
+
+4. Create virtual environment:
 
    python -m venv .venv
 
-4. Activate virtual environment:
+5. Activate virtual environment:
 
    Windows:
    .venv\Scripts\activate
 
-5. Install dependencies:
+6. Install dependencies:
 
    pip install selenium
+   
    pip install pytest
+
    pip install pytest-html
 
 ## Test Execution Steps
 
 Run test normally:
 
+   cd PYTEST
+
    pytest -v
 
 Run test with HTML report:
 
+   cd PYTEST
+
+   Create a folder "reports" inside PYTEST
+   
    pytest -v --html=reports/report_org.html 
 
 Report will be generated inside:
