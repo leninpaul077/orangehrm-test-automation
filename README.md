@@ -95,3 +95,7 @@ Open it in browser.
 - Framework currently supports Chrome only.
 - No parallel execution configured.
 - No CI/CD integration added.
+
+## Output
+
+- Test execution demo video attached : pycharm64_YV2logPCBv.mp4
